@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Form in Table with CSS</title>
+    <style>
+        body{
+            background-color: #a22b55;
+        }
+        table{
+            margin-left: 28%;
+            margin-top: 3%;
+            background-color: #75203f;
+            padding: 5%;
+            border: #75203f;
+        }
+        .cellModification1{
+            color: white;
+            border: #75203f;
+        }
+        .cellModification2{
+            border: #75203f;
+        }
+        .registerButton{
+            text-align: center;
+            width: 298px;
+            padding: 4px;
+            font-weight: bold;
+            border-radius: 2px solid white;
+        }
+    </style>
+</head>
+<body>
+    <form action="www.google.com"></form>
+    <table border="0px">
+        <tr><td class="cellModification1"><label for="">Name:</label></td><td class="cellModification2"><input type="text" placeholder="your name"></td></tr>
+        <tr><td class="cellModification1"><label for="">Email:</label></td><td class="cellModification2"><input type="email" placeholder="your email"></td></tr>
+        <tr><td class="cellModification1"><label for="">Password:</label></td><td class="cellModification2"><input type="password"></td></tr>
+        <tr><td class="cellModification1"><label for="">Phone Number:</label></td><td class="cellModification2"><input type="number"></td></tr>
+        <tr><td class="cellModification1"><label for="">Gender:</label></td><td class="cellModification1">Male:<input name="myGender" type="radio">Female:<input name="myGender" type="radio">Other:<input name="myGender" type="radio"></td></tr>
+        <tr><td class="cellModification1"><label for="">Language</label></td><td class="cellModification2"><select name="" id=""><option value="">select language</option><option value="">English</option><option value="">French</option><option value="">German</option><option value="">Urdu</option><option value="">Sindhi</option><option value="">Punjabi</option></select></td></tr>
+        <tr><td class="cellModification1"><label for="">Zip Code:</label></td><td class="cellModification2"><input type="number"></td></tr>
+        <tr><td class="cellModification1"><label for="">About:</label></td><td class="cellModification2"><textarea type="text" placeholder="Write about yourself..."></textarea></td></tr>
+        <tr><td colspan="2"><button class="registerButton" type="submit">Register</button></td></tr>
+</table>
+</form>
+</body>
+</html>
